@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="assets\css\css.css"> 
+    <title>Consultorio medico</title>
+    </head>
+    <body>
+      
+      <div class="encabezado">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets\img\cruz.png" alt="..." width="30" height="24">
+            </a>
+            <a class="nav-link" href="index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="agenda.html">Agenda</a>
+                     </li>
+                     <li class="nav-item">
+            <a class="nav-link" href="pacientes.html">Pacientes</a>
+                    </li>
+                     <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+                     </li>
+                     <li class="nav-item"></li>
+        </div>
+        </div>
+    </div>
+    </nav>
+    <h2 class="mb-4"><strong>Consultorio Médico </strong> </h2>
+    <div class="container mt-5"> 
+      <button type="button" class="btn btn-danger position-absolute top-0 end-0 mt-3 me-3" onclick="redirectToAnotherPage()">Cerrar sesión</button>
+    </div>
+
+        <div class="container">
+            <div class="row">
+        <div id="border">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="#" target="_blank"> <img src="assets\img\medical.jpg" class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#" target="_blank"> <img src="assets\img\cbd.jpg" class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#" target="_blank"> <img src="assets\img\doctor.jpg" class="d-block w-100" alt="..."></a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="container mt-5">
+          <h1 class="mb-4"><strong>Preguntas frecuentes</strong></h1>
+          <div class="accordion" id="preguntasFrecuentes">
+            <div class="card">
+              <div class="card-header" id="pregunta1">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#respuesta1" aria-expanded="true" aria-controls="respuesta1">
+                    ¿Qué es un consultorio virtual?
+                  </button>
+                </h2>
+              </div>
+        
+              <div id="respuesta1" class="collapse" aria-labelledby="pregunta1" data-parent="#preguntasFrecuentes">
+                <div class="card-body">
+                  Es un espacio virtual en el cual el equipo de salud atiende por medio de Tecnologías de la Información y Comunicación (TIC) a sus pacientes, sin necesidad de trasladarse de sus domicilios.
+                </div>
+              </div>
+            </div>
+        
+            <div class="card">
+              <div class="card-header" id="pregunta2">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#respuesta2" aria-expanded="true" aria-controls="respuesta2">
+                    ¿Cuál es la diferencia entre una teleconsulta sincrónica y una asincrónica?
+                  </button>
+                </h2>
+              </div>
+        
+              <div id="respuesta2" class="collapse" aria-labelledby="pregunta2" data-parent="#preguntasFrecuentes">
+                <div class="card-body">
+                  Desde el punto de vista tecnológico, la teleconsulta sincrónica hace referencia a la forma de comunicación que sucede en tiempo real y en la que participan e interactúan personas ubicadas en diferentes lugares. Así entonces, por oposición, en la teleconsulta asincrónica los participantes no interactúan en tiempo real, sino que la comunicación se realiza de manera diferida, mediante el envío de información.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div id="datos">
+                  <p>© 2023 All right reserved</p>
+                  <a href="https://www.facebook.com/daneduardo.angeles" target="_blank"> <img src="assets\img\fb.jpg" alt="..." width="30" height="24"> </a>
+                  <a href="https://www.instagram.com/danyangles/" target="_blank"><img src="assets\img\insta.jpg" alt="..." width="30" height="24"></a>
+          </div>
+      </footer>
+      <script>
+        // Función para redirigir a otra página
+        function redirectToAnotherPage() {
+            // Cambiar "tu-otra-pagina.html" con la ruta real de la página a la que deseas redirigir
+            window.location.href = "inicio-de-sesion.html";
+        }
+      </script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    </body>
+</html>
